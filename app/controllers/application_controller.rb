@@ -10,6 +10,7 @@ class ApplicationController < ActionController::Base
   end
 
   def load_product_categories
+    @categories = Category.all
   end
 
 end

@@ -10,7 +10,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= render "layouts/header", services: @services %>
+<%= render "layouts/header", services: @services, categories: @categories %>
 <div class="container">
 <%= yield %>
 </div>

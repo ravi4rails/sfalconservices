@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :categories
   resources :services do
     member do
       get :service_sub_category

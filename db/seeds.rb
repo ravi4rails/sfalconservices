@@ -14,6 +14,25 @@ s5 = Service.create(:name => "Party Organizers", :description => "service descri
 s6 = Service.create(:name => "Designers", :description => "service description pending")
 s7 = Service.create(:name => "Painters", :description => "service description pending")
 
+C1 = Category.create(:name => "Mobile & Accessories", :description => "category description pending")
+C2 = Category.create(:name => "Computers & Laptops", :description => "category description pending")
+C3 = Category.create(:name => "Electronics", :description => "category description pending")
+C4 = Category.create(:name => "Cloths", :description => "category description pending")
+C5 = Category.create(:name => "Books", :description => "category description pending")
+C6 = Category.create(:name => "Shoes", :description => "category description pending")
+C7 = Category.create(:name => "Gifts", :description => "category description pending")
+
+pc1 = ProductBundle.create(name: "Camera", description: "category description pending", category_id: 3)
+pc2 = ProductBundle.create(name: "TV & Home Theaters", description: "category description pending", category_id: 3)
+pc3 = ProductBundle.create(name: "Refrigerators & A.C", description: "category description pending", category_id: 3)
+
+pc7 = ProductBundle.create(name: "Coolers & Fans", description: "category description pending", category_id: 3)
+
+pc4 = ProductBundle.create(name: "Men", description: "category description pending", category_id: 4)
+pc5 = ProductBundle.create(name: "Women", description: "category description pending", category_id: 4)
+pc6 = ProductBundle.create(name: "Kids", description: "category description pending", category_id: 4)
+
+
 
 sc1 = ServiceSubCategory.create(name: "All Electronic Items", :description => "service description pending", :service_id => 4)
 sc2 = ServiceSubCategory.create(name: "Furnitures", :description => "service description pending", :service_id => 4)
