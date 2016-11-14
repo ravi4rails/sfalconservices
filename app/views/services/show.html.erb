@@ -10,5 +10,12 @@
   <%= @service.description %>
 </p>
 
+<div class="form-group">
+  <%= link_to "Add Sub-category to this service", service_sub_category_service_path(@service), class: "btn btn-primary", remote: true %>
+</div>
+
 <%= link_to 'Edit', edit_service_path(@service) %> |
 <%= link_to 'Back', services_path %>
+
+<div class="modal fade" id="sub-service-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+</div>

@@ -1,5 +1,5 @@
 class ServicesController < ApplicationController
-  before_action :set_service, only: [:show, :edit, :update, :destroy]
+  before_action :set_service, only: [:show, :edit, :update, :destroy, :service_sub_category]
 
   # GET /services
   # GET /services.json
@@ -61,6 +61,20 @@ class ServicesController < ApplicationController
     end
   end
 
+  def create_service_sub_category
+    @sub_service = ServiceSubCategory.create(service_category_params)
+    respond_to do |format|
+      if @sub_service.save
+        format.js
+      else
+        format.js
+      end
+    end
+  end
+
+  def service_sub_category
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_service
@@ -70,5 +84,9 @@ class ServicesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def service_params
       params.require(:service).permit(:name, :description)
+    end
+
+    def service_category_params
+      params.require(:create_service_sub_category).permit(:name, :description, :service_id)
     end
 end

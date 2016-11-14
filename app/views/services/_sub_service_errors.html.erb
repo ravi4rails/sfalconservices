@@ -1,0 +1,6 @@
+<h4><%= pluralize(@sub_service.errors.count, "error") %> prohibited this service from being saved:</h4>
+<ul>
+  <% @sub_service.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+  <% end %>
+</ul>
