@@ -19,10 +19,10 @@
           <ul class="dropdown-menu multi-level">
             <% categories.each do |category| %>
               <% unless category.product_bundles.present? %>
-                <li><a href="#"><%= category.name %></a></li>
+                <li><%= link_to category.name, category_path(category) %></li>
               <% else %>
                 <li class="dropdown-submenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= category.name %></a>
+                  <a href="<%= category_path(category) %>" class="dropdown-toggle" data-toggle="dropdown"><%= category.name %></a>
                     <ul class="dropdown-menu">
                       <% category.product_bundles.each do |product_bundle| %>
                         <li><a href="#"><%= product_bundle.name %></a></li>
