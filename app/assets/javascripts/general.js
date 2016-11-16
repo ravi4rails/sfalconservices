@@ -1,4 +1,12 @@
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap
+//= require general/jquery.parallax.js
+//= require general/owl.carousel
+//= require general/jquery.mCustomScrollbar.concat.min
+//= require general/jquery.themepunch.tools.min
+//= require general/jquery.themepunch.revolution.min
+//= require general/custom
+//= require general/shop.app
+//= require general/owl-carousel
+//= require general/revolution-slider.js

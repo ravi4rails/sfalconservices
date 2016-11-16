@@ -1,9 +1,16 @@
 /*
   *= require bootstrap
-  *= require general/app
+  *= require general/shop.style
+  *= require general/header-v5
+  *= require general/footer-v4
+  *= require general/animate
+  *= require general/line-icons
+  *= require font-awesome
+  *= require general/jquery.mCustomScrollbar
+  *= require general/owl.carousel
+  *= require general/settings
   *= require general/custom
+  *= require general/app
   *= require general/shop.blocks
   *= require general/shop.plugins
-  *= require general/shop.style
-  *= require font-awesome
 */
