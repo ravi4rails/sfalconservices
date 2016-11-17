@@ -76,7 +76,7 @@
             <span class="badge badge-sea rounded-x">3</span>
             <ul class="list-unstyled badge-open mCustomScrollbar" data-mcs-theme="minimal-dark">
               <li>
-                <img src="assets/img/thumb/05.jpg" alt="">
+                <%= image_tag "thumb/05.jpg", alt: "" %>
                 <button type="button" class="close">×</button>
                 <div class="overflow-h">
                   <span>Black Glasses</span>
@@ -84,7 +84,7 @@
                 </div>
               </li>
               <li>
-                <img src="assets/img/thumb/02.jpg" alt="">
+                <%= image_tag "thumb/02.jpg", alt: "" %>
                 <button type="button" class="close">×</button>
                 <div class="overflow-h">
                   <span>Black Glasses</span>
@@ -92,7 +92,7 @@
                 </div>
               </li>
               <li>
-                <img src="assets/img/thumb/03.jpg" alt="">
+                <%= image_tag "thumb/03.jpg", alt: "" %>
                 <button type="button" class="close">×</button>
                 <div class="overflow-h">
                   <span>Black Glasses</span>
@@ -178,13 +178,19 @@
                         <button type="button" class="btn-u btn-u-dark">Read More</button>
                       </div>
                       <div class="col-md-3 col-sm-4 col-xs-4 md-margin-bottom-30">
-                        <a href="#"><img class="product-offers img-responsive" src="assets/img/blog/01.jpg" alt=""></a>
+                        <a href="#">
+                          <%= image_tag "blog/01.jpg", class: "product-offers img-responsive", alt: "" %>
+                        </a>
                       </div>
                       <div class="col-md-3 col-sm-4 col-xs-4 sm-margin-bottom-30">
-                        <a href="#"><img class="product-offers img-responsive" src="assets/img/blog/02.jpg" alt=""></a>
+                        <a href="#">
+                          <%= image_tag "blog/02.jpg", class: "product-offers img-responsive", alt: "" %>
+                        </a>
                       </div>
                       <div class="col-md-3 col-sm-4 col-xs-4">
-                        <a href="#"><img class="product-offers img-responsive" src="assets/img/blog/03.jpg" alt=""></a>
+                        <a href="#">
+                          <%= image_tag "blog/03.jpg", class: "product-offers img-responsive", alt: "" %>
+                        </a>
                       </div>
                     </div><!--/end row-->
                   </div><!--/end container-->
