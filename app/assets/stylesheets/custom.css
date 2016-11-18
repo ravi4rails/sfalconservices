@@ -56,3 +56,7 @@
   width:100%;
   height:300px;
 }
+
+.pimage {
+  max-height:300px;
+}

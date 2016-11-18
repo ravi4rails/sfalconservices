@@ -17,13 +17,20 @@
 
 <p>
   <strong>Category:</strong>
-  <%= @product.category_id %>
+  <%= @product.category.try(:name) %>
 </p>
 
 <p>
   <strong>Product bundle:</strong>
-  <%= @product.product_bundle_id %>
+  <%= @product.product_bundle.try(:name) %>
 </p>
+
+
+<% @product.images.each do |img|%>
+  <div class="product-img">
+    <%= image_tag img.image_url, class: "img-responsive pimage" %>
+  </div>
+<% end %>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
