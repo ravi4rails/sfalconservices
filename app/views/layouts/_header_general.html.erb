@@ -216,7 +216,7 @@
                             <h3 class="mega-menu-heading"><%= category.name %></h3>
                             <ul class="list-unstyled style-list">
                               <% category.product_bundles.each do |bundle|%>
-                                <li><a href="#"><%= bundle.name %></a></li>
+                                <li><%= link_to bundle.name, product_bundle_path(bundle)%></li>
                               <% end %>
                             </ul>
                           </div>
