@@ -53,7 +53,7 @@ class ProductBundlesController < ApplicationController
   private
 
     def set_product_bundle
-      @product_bundle = ProductBundle.find(params[:id])
+      @product_bundle = ProductBundle.friendly.find(params[:id])
     end
 
     def bundle_params
