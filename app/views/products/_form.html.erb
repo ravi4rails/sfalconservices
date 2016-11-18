@@ -31,7 +31,7 @@
         </div>
         <div class="form-group">
           <%= f.label :product_bundle_id %>
-          <%= f.number_field :product_bundle_id, class: "form-control" %>
+          <%= f.select :product_bundle_id, options_for_select(ProductBundle.all.collect {|p| [ p.name, p.id ] },(f.object.try(:product_bundle_id))),{include_blank: 'None'}, { :class => 'form-control'} %>
         </div>
         <div class="actions">
           <%= f.submit class: "btn btn-lg btn-primary" %>
