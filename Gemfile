@@ -58,3 +58,4 @@ end
 gem "font-awesome-rails"
 gem "rmagick"
 gem "carrierwave"
+gem "cocoon"
