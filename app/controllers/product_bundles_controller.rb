@@ -14,6 +14,7 @@ class ProductBundlesController < ApplicationController
   end
 
   def show
+    render layout: 'general'
   end
 
   def create
