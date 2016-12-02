@@ -60,3 +60,4 @@ gem "rmagick"
 gem "carrierwave"
 gem "cocoon"
 gem 'friendly_id', '~> 5.1.0'
+gem 'devise'
