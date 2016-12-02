@@ -1,5 +1,5 @@
 class Admins::ProductBundlesController < ApplicationController
-
+  before_action :authenticate_admin!
   before_action :set_product_bundle, only: [:edit, :show, :update, :destroy]
 
   def index
